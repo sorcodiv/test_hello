@@ -1,2 +1,1 @@
-# test_hello
-Some assumptions checking
+# Some assumptions checking
