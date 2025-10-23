@@ -25,6 +25,12 @@ jobs:
           path: ./*.zip
           if-no-files-found: error
 
+  release:
+    needs: [build]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
