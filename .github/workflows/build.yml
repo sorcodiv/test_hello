@@ -26,7 +26,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: hello_bin
-          path: *.zip
+          path: ./*.zip
           if-no-files-found: error
 
   release:
@@ -44,4 +44,4 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          files: *.zip
+          files: ./*.zip
